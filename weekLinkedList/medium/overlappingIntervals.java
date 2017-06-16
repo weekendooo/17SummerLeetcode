@@ -27,7 +27,7 @@ public class overlappingIntervals {
                               //    i
         Arrays.sort(starts);  // 1  3  7  12  13  16  18  18  22  22
         Arrays.sort(ends);   //  5  8 10  15  17  18  18  21  23  24
-        					//  i-1 
+        		    //  i-1 
         for (int i = 1; i < size; i++) {
         	if (starts[i] <= ends[i - 1]) {
         		if (res.contains(new Interval(starts[i], ends[i - 1]))) continue;
