@@ -3,7 +3,9 @@ package StringMedium;
 public class No161OneEditDistance {
 
 	public boolean isOneEditDistance(String s, String t) {
-        if (s.length() < 1 && t.length() < 1) return false;
+        if (s.length() < 1 && t.length() < 1) {
+		return false;
+	}
         
         for (int i = 0; i < Math.min(s.length(), t.length()); i++) {
             if (s.charAt(i) != t.charAt(i)) {
